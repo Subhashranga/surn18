@@ -1,4 +1,123 @@
-commit aaaefbc535821a2f0ccee271735cab55fb8b4d57 (HEAD -> master, origin/master)
+commit cf6ad8d507d26e38f0ec5b5ccadc00a98fc75bba (HEAD -> master)
+Merge: 624bad5 4eb4f49
+Author: Subhashranga <bbb.ranga@gmail.com>
+Date:   Sun May 31 21:12:46 2020 +0200
+
+    Merge branch 'master' of https://github.com/Subhashranga/surn18
+
+commit 624bad5e558a5875ab73b5495aa8e4010717d3fd
+Author: Subhashranga <bbb.ranga@gmail.com>
+Date:   Sun May 31 21:04:31 2020 +0200
+
+    renaming config as .php
+
+commit 4eb4f495afae1a9017fc5018883bfed0d5010c30 (origin/master)
+Author: Subhashranga <51677874+Subhashranga@users.noreply.github.com>
+Date:   Sun May 31 21:02:16 2020 +0200
+
+    updated search
+
+commit ac93e4f364147fa691bbb3e5d425c7954d54d6f4
+Author: Subhashranga <bbb.ranga@gmail.com>
+Date:   Sun May 31 20:54:39 2020 +0200
+
+    renaming config as php
+
+commit 2bde5cc7958f7ea074cfd1dd239d30ba3837fef7
+Author: Subhashranga <bbb.ranga@gmail.com>
+Date:   Sun May 31 20:53:24 2020 +0200
+
+    renaming config as php
+
+commit 8019c30a62346631bc64a1ca2c5667910adf8626
+Author: Subhashranga <bbb.ranga@gmail.com>
+Date:   Sun May 31 20:51:41 2020 +0200
+
+    renaming config as php file
+
+commit 387a5c804a90584144489cfe378b273ced1f37e9
+Author: Subhashranga <bbb.ranga@gmail.com>
+Date:   Sun May 31 20:49:15 2020 +0200
+
+    resetting the filenames
+
+commit e376e5566127703f5ec5710761e45ce160318864
+Author: Subhashranga <bbb.ranga@gmail.com>
+Date:   Sun May 31 19:58:06 2020 +0200
+
+    gitlog
+
+commit aaaefbc535821a2f0ccee271735cab55fb8b4d57
+Author: Subhashranga <bbb.ranga@gmail.com>
+Date:   Sun May 31 19:33:50 2020 +0200
+
+    backend for probing
+
+commit e35799138f7d44edaba373b1a89b7c3b5914d418
+Author: Subhashranga <bbb.ranga@gmail.com>
+Date:   Sun May 31 19:17:37 2020 +0200
+
+    configuration file
+
+commit c11b6ea112b41cc1fb50b9cb8ff2e026f61339db
+Author: Subhashranga <bbb.ranga@gmail.com>
+Date:   Sun May 31 19:04:06 2020 +0200
+
+    file for searching devices
+
+commit b5af3ffd710626453fc91519e3c6c4f3ccfb805d
+Author: Subhashranga <bbb.ranga@gmail.com>
+Date:   Sun May 31 18:52:34 2020 +0200
+commit cf6ad8d507d26e38f0ec5b5ccadc00a98fc75bba (HEAD -> master)
+Merge: 624bad5 4eb4f49
+Author: Subhashranga <bbb.ranga@gmail.com>
+Date:   Sun May 31 21:12:46 2020 +0200
+
+    Merge branch 'master' of https://github.com/Subhashranga/surn18
+
+commit 624bad5e558a5875ab73b5495aa8e4010717d3fd
+Author: Subhashranga <bbb.ranga@gmail.com>
+Date:   Sun May 31 21:04:31 2020 +0200
+
+    renaming config as .php
+
+commit 4eb4f495afae1a9017fc5018883bfed0d5010c30 (origin/master)
+Author: Subhashranga <51677874+Subhashranga@users.noreply.github.com>
+Date:   Sun May 31 21:02:16 2020 +0200
+
+    updated search
+
+commit ac93e4f364147fa691bbb3e5d425c7954d54d6f4
+Author: Subhashranga <bbb.ranga@gmail.com>
+Date:   Sun May 31 20:54:39 2020 +0200
+
+    renaming config as php
+
+commit 2bde5cc7958f7ea074cfd1dd239d30ba3837fef7
+Author: Subhashranga <bbb.ranga@gmail.com>
+Date:   Sun May 31 20:53:24 2020 +0200
+
+    renaming config as php
+
+commit 8019c30a62346631bc64a1ca2c5667910adf8626
+Author: Subhashranga <bbb.ranga@gmail.com>
+Date:   Sun May 31 20:51:41 2020 +0200
+
+    renaming config as php file
+
+commit 387a5c804a90584144489cfe378b273ced1f37e9
+Author: Subhashranga <bbb.ranga@gmail.com>
+Date:   Sun May 31 20:49:15 2020 +0200
+
+    resetting the filenames
+
+commit e376e5566127703f5ec5710761e45ce160318864
+Author: Subhashranga <bbb.ranga@gmail.com>
+Date:   Sun May 31 19:58:06 2020 +0200
+
+    gitlog
+
+commit aaaefbc535821a2f0ccee271735cab55fb8b4d57
 Author: Subhashranga <bbb.ranga@gmail.com>
 Date:   Sun May 31 19:33:50 2020 +0200
 
@@ -46,3 +165,4 @@ Date:   Sun May 31 17:58:59 2020 +0200
 
     add device
 (END)
+
