@@ -1,6 +1,6 @@
 <?php
 
-include('config.php.txt');
+include('config.php');
 
 $result = $db->query('SELECT * FROM List');
 
@@ -10,3 +10,4 @@ while($row = $result->fetchArray(SQLITE3_ASSOC) ) {
 $db->close();
 
 ?>
+	
