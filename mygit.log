@@ -1,0 +1,48 @@
+commit aaaefbc535821a2f0ccee271735cab55fb8b4d57 (HEAD -> master, origin/master)
+Author: Subhashranga <bbb.ranga@gmail.com>
+Date:   Sun May 31 19:33:50 2020 +0200
+
+    backend for probing
+
+commit e35799138f7d44edaba373b1a89b7c3b5914d418
+Author: Subhashranga <bbb.ranga@gmail.com>
+Date:   Sun May 31 19:17:37 2020 +0200
+
+    configuration file
+
+commit c11b6ea112b41cc1fb50b9cb8ff2e026f61339db
+Author: Subhashranga <bbb.ranga@gmail.com>
+Date:   Sun May 31 19:04:06 2020 +0200
+
+    file for searching devices
+
+commit b5af3ffd710626453fc91519e3c6c4f3ccfb805d
+Author: Subhashranga <bbb.ranga@gmail.com>
+Date:   Sun May 31 18:52:34 2020 +0200
+
+    listing the devices
+
+commit ec87ab98edea0c4aed44b5c2309dd968957a946f
+Author: Subhashranga <bbb.ranga@gmail.com>
+Date:   Sun May 31 18:43:27 2020 +0200
+
+    addin removedevice
+
+commit 97f53d6ae122b1edb1e1ce40a7e6149e6f3d6f8e
+Author: Subhashranga <bbb.ranga@gmail.com>
+Date:   Sun May 31 18:38:35 2020 +0200
+
+    list file
+
+commit dec737e8d36c27e2ebe9be31ca1dca19c455e8eb
+Author: Subhashranga <bbb.ranga@gmail.com>
+Date:   Sun May 31 18:07:51 2020 +0200
+
+    error correction
+
+commit 5b69d497717846030335f105e1ea841f84fc02e6
+Author: Subhashranga <bbb.ranga@gmail.com>
+Date:   Sun May 31 17:58:59 2020 +0200
+
+    add device
+(END)
