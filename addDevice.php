@@ -1,23 +1,34 @@
 <?php
 
-include('config.php');
+include_once('config.php');
 
 $ip = $_GET['ip'];
 $port = $_GET['port'];
 $community = $_GET['community'];
 $version = $_GET['version'];
 
-if(empty($ip) || empty($port) || empty($community) || empty($version)) {
-    echo "provide correct input" ;   
+if(empty($ip) || empty($port)||empty($community) || empty($version)) {
+    echo "Failed";
 }
 
 else {
-
-    $db->exec("INSERT INTO info (IP,PORT,COMMUNITY,VERSION) VALUES ('$ip','$port','$community','$version')");
-        echo "\n";
-        echo "OK";
-    
+    $output = $database->query('SELECT * FROM switches');
+    $count = 0;
+    foreach ($output as $output) {
+        if($output['ip']==$ip && $output['port']==$port && $output['community']==$community && $output['version']==$version){
+            $count = $count+1;
+        }
     }
-$db->close();
+
+    if ($count ==0){
+        $database->exec("INSERT INTO switches (ip,port,community,version) VALUES ('$ip','$port','$community','$version')");
+        echo "Done";
+    }
+    else {
+        echo "Failed";
+    }
+}
+
+$database->close();
 
 ?>

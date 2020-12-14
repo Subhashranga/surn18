@@ -1,21 +1,33 @@
-
 <?php
-class mydb extends SQLite3 {
+   class DatabaseConfig extends SQLite3 {
       function __construct() {
-         $this->open('database.db');
-      }
-}
-$db = new mydb();
-
-
-$result = $db->exec('CREATE TABLE IF NOT EXISTS List(IP varchar not null, VLANs varchar not null, PORT varchar, MACS varchar)');
-if(!$result){
-   echo $db->lastErrorMsg(); #prints the error which causes SQlite request to fail
+         $this->open('subhash.db');
+       }
 }
 
-$result = $db->exec('CREATE TABLE IF NOT EXISTS info(IP varchar not null,PORT varchar not null,COMMUNITY string not null ,VERSION varchar not null, FIRST_PROBE varchar, LATEST_PROBE varchar null, FAILED_ATTEMPTS int default 0 not null)');
-   if(!$result){
-      echo $db->lastErrorMsg();
+$database = new DatabaseConfig();
+
+$query1 =<<<EOF
+
+   CREATE TABLE IF NOT EXISTS List(Device varchar not null,VLANS varchar not null,port varchar,MACS  varchar);
+EOF;
+
+$response1 = $database->exec($query1);
+
+if(!$response1){
+  echo $database->lastErrorMsg();
+}
+
+$query2 =<<<EOF
+
+     CREATE TABLE IF NOT EXISTS switches (ip varchar not null,port varchar not null,community string not null,version varchar not null,first_probetime varchar null,latest_probetime varchar null,failed_attempts int default 0 not null);
+
+EOF;
+
+   $response2 = $database->exec($query2);
+
+   if(!$response2){
+      echo $database->lastErrorMsg();
    }
 
 ?>
