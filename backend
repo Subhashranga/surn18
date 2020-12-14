@@ -44,21 +44,21 @@ def probing_with_oids(ip, port, community, version, connect):
     try:
         macid = session.walk(oids['dot1dTpFdbEntryAddress'])
         portnumber = session.walk(oids['dot1dTpFdbEntryPort'])
-        for m,p in zip(macid, portnumber):
-            oid = m.oid;oid_index = m.oid_index;snmp_type=m.snmp_type
-            macoid = ':'.join('{:02x}'.format(ord(a)) for a in m.value)
+        for o,p in zip(macid, portnumber):
+            oid = o.oid;oid_index = o.oid_index;snmp_type=o.snmp_type
+            macoid = ':'.join('{:02x}'.format(ord(a)) for a in o.value)
             portval = p.value
             print(ip,macoid,portval)
             reply = connect.execute("SELECT * from List where (port=? and Device=?)",(portval,ip))
             fetch_data = reply.fetchall()
             for connected_macs in fetch_data:
-                m = connected_macs[3]
+                o = connected_macs[3]
             if len(fetch_data)==0:
                 print(ip,macoid,portval)
                 connect.execute('''INSERT INTO List(Device, VLANS, port, MACS) values (?,?,?,?)''',(ip,VL,portval,macoid))
                 connect.commit()
-            elif len(fetch_data)==1 and m.find(macoid)==-1:
-                finalmac = m+","+macoid
+            elif len(fetch_data)==1 and o.find(macoid)==-1:
+                finalmac = o+","+macoid
                 connect.execute("UPDATE List set MACS=? where port=?",(finalmac,portval))
                 connect.commit()
         vlansnum = []
