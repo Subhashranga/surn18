@@ -1,7 +1,7 @@
 <?php
    class DatabaseConfig extends SQLite3 {
       function __construct() {
-         $this->open('subhash.db');
+         $this->open('subbu.db');
        }
 }
 

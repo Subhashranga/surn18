@@ -8,16 +8,16 @@ $community = $_GET['community'];
 $version = $_GET['version'];
 
 if(empty($ip) || empty($port)||empty($community) || empty($version)) {
-    echo "Failed";
+    echo "FALSE";
 }
 
 else {
     $remove = $database->exec("DELETE FROM switches WHERE ip='$ip' AND port='$port'AND community='$community' AND version='$version'");
     if(!$remove){
-        echo "Failed";
+        echo "FALSE";
     }
     else {
-        echo "Done";
+        echo "OK";
     }
 }
 
