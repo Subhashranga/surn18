@@ -22,7 +22,7 @@ else {
 
     if ($count ==0){
         $database->exec("INSERT INTO switches (ip,port,community,version) VALUES ('$ip','$port','$community','$version')");
-        echo "OK";
+        echo "Added";
     }
     else {
         echo "FALSE";

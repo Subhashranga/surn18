@@ -99,10 +99,10 @@ def probing_with_oids(ip, port, community, version, connection):
         print(str(e)+' '+str(ip)+":"+str(port))
     finish = str(datetime.fromtimestamp(int(time.time())))
     print(finish)
-    print('ok!')
+    print('Done!')
     connection.execute("update switches set first_probetime=?, latest_probetime=? where (ip=? and port=?)",(start, finish, ip, port))
     connection.commit()
-    print("Db updated!")
+    print("Database updated!")
 if  __name__=='__main__':
     while True:
         create_connection('subbu.db')
