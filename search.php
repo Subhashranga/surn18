@@ -3,7 +3,7 @@
 include_once('config.php');
 
 if (empty($_GET)) {
-    echo "Failed";
+    echo "FALSE";
     }
 else {
     $addr = htmlspecialchars($_GET["mac"]);
@@ -22,7 +22,7 @@ if ($totnum ==0){
     $count = $database->query('SELECT count(*) FROM switches');
     while($row1 = $count->fetchArray(SQLITE3_ASSOC)) {
         $noDevices = $row1['count(*)'];
-        echo "No devices in $noDevices devices"."\n";
+        echo "Not Found in $noDevices devices"."\n";
      }
 }
 

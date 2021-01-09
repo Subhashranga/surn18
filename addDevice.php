@@ -8,7 +8,7 @@ $community = $_GET['community'];
 $version = $_GET['version'];
 
 if(empty($ip) || empty($port)||empty($community) || empty($version)) {
-    echo "Failed";
+    echo "WRONG";
 }
 
 else {
@@ -22,10 +22,10 @@ else {
 
     if ($count ==0){
         $database->exec("INSERT INTO switches (ip,port,community,version) VALUES ('$ip','$port','$community','$version')");
-        echo "Done";
+        echo "DONE";
     }
     else {
-        echo "Failed";
+        echo "Re_try";
     }
 }
 
